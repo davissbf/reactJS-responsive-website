@@ -1,6 +1,16 @@
 import React from 'react';
 import '../../App.css';
+import ProductsCards from '../PorductsCards';
 
 export default function Products() {
-  return <h1 className='products'>PRODUCTS</h1>
-}
+  return (
+    <section className='Main'>
+      <div>
+        <h1 className='products'>Conheça mais minhas habilidades</h1>
+      </div>
+      <div>
+       <ProductsCards />
+      </div>
+    </section>
+  )
+};

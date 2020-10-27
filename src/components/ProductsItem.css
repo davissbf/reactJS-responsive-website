@@ -1,0 +1,150 @@
+@import url('https://font.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+.container {
+  position: relative;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 0 20px;
+}
+
+.container .box {
+  position: relative;
+  height: 500px;
+  background: #060c21;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+}
+
+.container .box::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  transform: skew(2deg,2deg);
+  z-index: -1;
+}
+
+.container .box1:nth-child(1)::before {
+  background: linear-gradient(315deg,#ff0057,#e64a19);
+}
+.container .box2:nth-child(1)::before {
+  background: linear-gradient(315deg,#89ff00,#00bcd4);
+}
+.container .box3:nth-child(1)::before {
+  background: linear-gradient(315deg,#e91e63,#5d02ff);
+}
+.container .box4:nth-child(1)::before {
+  background: linear-gradient(315deg,#ff0000,#ffc107);
+}
+.container .box5:nth-child(1)::before {
+  background: linear-gradient(315deg,#d0ff00,#07ffc1);
+}
+.container .box6:nth-child(1)::before {
+  background: linear-gradient(315deg,#000000,#070bff);
+}
+.container .box7:nth-child(1)::before {
+  background: linear-gradient(315deg,#a7a7a7,#07ffff);
+}
+.container .box8:nth-child(1)::before {
+  background: linear-gradient(315deg,#ff0062,#079cff);
+}
+.container .box9:nth-child(1)::before {
+  background: linear-gradient(315deg,#ff00ea,#93ff07);
+}
+.container .box10:nth-child(1)::before {
+  background: linear-gradient(315deg,#fd86f3,#574001);
+}
+.container .box11:nth-child(1)::before {
+  background: linear-gradient(315deg,#4b0922,#2f4b0b);
+}
+.container .box12:nth-child(1)::before {
+  background: linear-gradient(315deg,#210531,#f5f24c);
+}
+.container .box13:nth-child(1)::before {
+  background: linear-gradient(315deg,#ababac,#f59e4c);
+}
+.container .box14:nth-child(1)::before {
+  background: linear-gradient(315deg,#210531,#2c971e);
+}
+.container .box15:nth-child(1)::before {
+  background: linear-gradient(315deg,#050831,#4cd3f5);
+}
+
+.container .box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,0.05);
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  padding: 20px;
+  transform: translateY(40px);
+}
+
+.box .content h2 {
+  position: absolute;
+  top: -60px;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+  font-size: 10em;
+  color: rgba(255,255,255,.05);
+  transition: 0.5s;
+}
+
+.box:hover .content h2 {
+  top: -140px;
+}
+
+.box .content h3 {
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.box .content p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 18px;
+}
+
+.box .content a {
+  position: relative;
+  margin: 20px 0 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 1px solid #fff;
+  display: inline-block;
+  color: #fff;
+  transition: 0.5s;
+  transform: translateY(-40px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.box:hover .content a {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.box .content a:hover {
+  color: #000;
+  background: #fff;
+}
