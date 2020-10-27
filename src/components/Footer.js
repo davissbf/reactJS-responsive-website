@@ -68,7 +68,10 @@ function Footer() {
               <i class='fas fa-code' />
             </Link>
           </div>
-          <small class='website-rights'>Dev © 2020</small>
+          <small class='website-rights'>
+            Dev © 2020
+            Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+            </small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
