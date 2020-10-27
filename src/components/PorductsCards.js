@@ -189,10 +189,9 @@ function PorductsCards() {
                 <div className="box box15">
                   <div className="content">
                     <h2>15</h2>
-                    <h3>Python Avançado</h3>
-                    <p>Python para trabalhar com a Internet utilizando
-                      frameworks web mais popular como Django.</p>
-                    <a>Concluido em 2020</a>
+                    <h3>Get Connected</h3>
+                    <p>Curso oferecido pela CISCO</p>
+                    <a>Concluido em 2019</a>
                   </div>
                 </div>
               </div>
